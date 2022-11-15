@@ -48,7 +48,7 @@ namespace Commandline_Generator_Backend
 
             Console.WriteLine(req.HttpMethod + " " + req.Url.ToString() + " " + req.UserHostName + " " + req.UserAgent);
 
-            sendResponse(0, null, resp);
+            sendResponse(0, test.test, resp);
         }
 
         private static async void sendResponse(int code, object obj, HttpListenerResponse resp)
